@@ -1,0 +1,52 @@
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.card>img{
+    width: 400px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card>h1{
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.card>p{
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.offer{
+    width: 300px;
+    height:75px;
+    background-color: hsl(225, 100%, 94%);
+    margin: auto;
+    border-radius: 20px;
+}
+
+.offer>img{
+    margin-top: 13px;
+}
+
+.offer>.period{
+    margin-left: 20px;
+    margin-top: 50px;
+}
