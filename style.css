@@ -1,8 +1,7 @@
 body{
     background-image: url(images/pattern-background-desktop.svg);
     background-color: hsl(225, 100%, 94%);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat-x;
     font-family: 'Red Hat Display', sans-serif;
 }
 
@@ -12,6 +11,7 @@ body{
     background-color: white;
     border-radius: 20px;
     margin: auto;
+    margin-top: 4%;
 }
 
 .card>img{
@@ -35,18 +35,140 @@ body{
 }
 
 .offer{
-    width: 300px;
-    height:75px;
-    background-color: hsl(225, 100%, 94%);
+    width: 325px;
+    height: 100px;
+    background-color: hsl(225, 100%, 98%);
     margin: auto;
     border-radius: 20px;
 }
 
 .offer>img{
-    margin-top: 13px;
+    margin-top: 25px;
+    margin-left: 20px;
+    position: absolute;
 }
 
 .offer>.period{
-    margin-left: 20px;
-    margin-top: 50px;
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 25px;
+    font-weight: 900;
+}
+
+.offer>.price{
+    position: absolute;
+    margin: 90px;
+    margin-top: 55px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.offer>button{
+    position: absolute;
+    margin-left: 230px;
+    margin-top: 40px;
+    border: none;
+    background-color: hsl(225, 100%, 98%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.offer>button:hover{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.payment{
+    width: 325px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 38px;
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 10px 15px 0px hsla(245, 75%, 52%, 0.295);
+}
+
+.payment:hover{
+    opacity: 70%;
+}
+
+.cancel{
+    width: 325px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 38px;
+    border: none;
+    background-color: white;
+    color: hsl(224, 23%, 55%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+
+    .card{
+        width: 300px;
+        height: 550px;
+        margin-top: 10%;
+    }
+
+    .card>img{
+        width: 300px;
+    }
+
+    .offer{
+        width: 250px;
+        height: 75px;
+    }
+
+    .offer>button{
+        margin-left: 180px;
+        margin-top: 30px;
+    } 
+
+    .offer>img{
+        margin-top: 14px;
+        margin-left: 15px;
+    }
+    
+    .offer>.period{
+        margin-left: 80px;
+        margin-top: 15px;
+    }
+    
+    .offer>.price{
+        margin: 80px;
+        margin-top: 45px;
+    }
+    .payment{
+        width: 250px;
+        height: 40px;
+        margin-top: 30px;
+        margin-left: 38px;
+    }
+    
+    .cancel{
+        width: 250px;
+        height: 40px;
+        margin-top: 30px;
+        margin-left: 38px;
+
+    }
 }
